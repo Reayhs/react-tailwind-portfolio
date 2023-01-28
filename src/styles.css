@@ -1,0 +1,68 @@
+swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: black;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .img-box:hover .p{
+    top: 0;
+  }
+
+  .p{
+    transition: 0.5s all;
+  }
+
+
+  .banner-astronout {
+    position: absolute;
+    animation: astronout 2s infinite alternate linear;
+    -webkit-animation: astronout  2s infinite alternate linear;
+    width: 400px;
+}
+
+
+@keyframes astronout {
+  0% {
+    left: 70%;
+    top: 25%;
+  }
+
+  100% {
+    left: 60%;
+    top: 35%;
+  }
+}
+
+.bla{
+  transition: transform ease .4s;
+  padding: 0 10px;
+}
+.bla:hover{
+  transform: scale(1.3);
+}
