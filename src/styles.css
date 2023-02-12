@@ -42,12 +42,18 @@ swiper {
   .banner-astronout {
     position: absolute;
     animation: astronout 2s infinite alternate linear;
-    -webkit-animation: astronout  2s infinite alternate linear;
+    -webkit-animation: astronout  4s infinite alternate linear;
     width: 400px;
 }
 
+.banner-astronout1 {
+  position: absolute;
+  animation: astronout1 2s infinite alternate linear;
+  -webkit-animation: astronout1  4s infinite alternate linear;
+  width: 400px;
+}
 
-@keyframes astronout {
+@keyframes astronout1 {
   0% {
     left: 70%;
     top: 25%;
@@ -55,6 +61,19 @@ swiper {
 
   100% {
     left: 60%;
+    top: 35%;
+  }
+}
+
+
+@keyframes astronout {
+  0% {
+    left: 50%;
+    top: 45%;
+  }
+
+  100% {
+    left: 40%;
     top: 35%;
   }
 }
