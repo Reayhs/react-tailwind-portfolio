@@ -14,4 +14,4 @@ function EducationCard({ item }) {
   )
 }
 
-export default EducationCard
+export default EducationCard 

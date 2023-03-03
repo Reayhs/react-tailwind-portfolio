@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import img1 from "../assets/images/project-img1.png";
 import img2 from "../assets/images/project-img2.png";
 import img3 from "../assets/images/project-img3.png";
+import img5 from "../assets/images/project-img5.jpg";
+
+// import { EducationCard } from "EducationCard";
 
 import "../styles.css";
 import ProjectCard from "./ProjectCard";
-import EducationCard from "./EducationCard";
+import EduCard from "./EduCard"
 
 
 function Projects() {
@@ -34,21 +37,21 @@ function Projects() {
   const eductions = [
     {
       id: 1,
-      title: "Bachelor's of  Computer Application",
-      description: "Design & Development",
-      img: img1,
+      title: "Bachelors in Computer Application",
+      description: "Rimt University 2022",
+
     },
     {
       id: 2,
-      title: "Higher Secondary School ",
-      description: "Design & Development",
-      img: img2,
+      title: "Higher Secondary School",
+      description: "Government Higher Secondary School Handwara 2018",
+
     },
     {
       id: 3,
-      title: "Matriculation ",
-      description: "Design & Development",
-      img: img3,
+      title: "Matriculation",
+      description: "Government High School Sanzipora 2016",
+
     },
   ];
 
@@ -87,14 +90,11 @@ function Projects() {
             ? projects.map((item, i) => <ProjectCard key={i} item={item} />)
             : null}
         </div>
-        {durum === 2 ? (
-          <div className="grid grid-cols-3 p-10 gap-8 lg:grid-cols-2 tl:grid-cols-1 ">
-            {durum === 1
-              ? educations.map((item, i) => <EducationCard key={i} item={item} />)
-              : null}
-          </div>
-
-        ) : null}
+        <div className="grid grid-cols-3 p-10 gap-8 lg:grid-cols-2 tl:grid-cols-1 ">
+          {durum === 2
+            ? eductions.map((item, i) => <EduCard key={i} item={item} />)
+            : null}
+        </div>
         {durum === 3 ? (
           <div
             id="text1"
