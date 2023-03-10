@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import img1 from "../assets/images/project-img1.png";
 import img2 from "../assets/images/project-img2.png";
 import img3 from "../assets/images/project-img3.png";
-import img5 from "../assets/images/project-img5.jpg";
+// import img5 from "../assets/images/project-img5.jpg";
+import About from "./About";
 
 // import { EducationCard } from "EducationCard";
 
@@ -17,19 +18,19 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Informed.pro",
+      description: "Backnend",
       img: img1,
     },
     {
       id: 2,
-      title: "Business Startup",
+      title: "OneSource Backend",
       description: "Design & Development",
       img: img2,
     },
     {
       id: 3,
-      title: "Business Startup",
+      title: "iCare",
       description: "Design & Development",
       img: img3,
     },
@@ -98,9 +99,8 @@ function Projects() {
         {durum === 3 ? (
           <div
             id="text1"
-            className="tab-pane  text-center text-white py-5   lg:p-5"
-          >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, nisi.
+            className="tab-pane  text-center text-white py-5   lg:p-5">
+           <About/>
           </div>
         ) : null}
       </div>

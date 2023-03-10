@@ -26,7 +26,7 @@ function Navbar() {
   return (
     <>
       <div className="navbarcon flex justify-between items-center px-20 py-6 bg-transparent z-40 text-white lg:px-6 fixed w-full">
-        <h1 className="text-4xl  font-bold ">Hackmack
+        <h1 className="text-4xl  font-bold  BlinkMacSystemFont" > <a href="/"> Hackmack</a>
         </h1>
 
         <nav

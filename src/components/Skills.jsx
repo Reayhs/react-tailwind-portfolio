@@ -6,12 +6,12 @@ import "../styles.css";
 import { Navigation } from "swiper";
 import { Pagination } from "swiper";
 import img from "../assets/images/meter1.svg";
-import bg from "../assets/images/banner-bg.png"
+// import bg from "../assets/images/banner-bg.png"
 
 function Skills() {
   return (
     <>
-      <div id="skills" style={{ backgroundImage: `url(${bg})` }} className="wrapper h-full bg-no-repeat bg-center bg-cover p-16 lg:p-4">
+      <div id="skills" className=" bg-[#171717] wrapper h-full bg-no-repeat bg-center bg-cover p-16 lg:p-4">
         <div className="skills-wrapper text-center text-white bg-[#171717]  p-10 rounded-[50px] lg:p-2">
           <h1 className="text-4xl ">Skills</h1>
           <p className="text-lg py-3">
