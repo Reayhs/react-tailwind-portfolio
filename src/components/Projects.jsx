@@ -99,7 +99,7 @@ function Projects() {
         {durum === 3 ? (
           <div
             id="text1"
-            className="tab-pane  text-center text-white py-5   lg:p-5">
+            className="tab-pane  text-center text-white py-5   ">
            <About/>
           </div>
         ) : null}
