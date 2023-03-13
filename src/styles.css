@@ -85,3 +85,11 @@ swiper {
 .bla:hover{
   transform: scale(1.3);
 }
+#home > div.navbarcon.flex.justify-between.items-center.px-20.py-6.bg-transparent.z-40.text-white.lg\:px-6.fixed.w-full > h1{
+
+  font-family: 'Times New Roman', Times, serif;
+}
+
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
